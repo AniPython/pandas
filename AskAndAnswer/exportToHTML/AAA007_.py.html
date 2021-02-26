@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>AAA007_.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+AAA007_.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">pandas </span><span class="s0">as </span><span class="s1">pd</span>
+<span class="s0">from </span><span class="s1">glob </span><span class="s0">import </span><span class="s1">glob</span>
+<span class="s0">import </span><span class="s1">time</span>
+<span class="s0">from </span><span class="s1">multiprocessing </span><span class="s0">import </span><span class="s1">Pool</span><span class="s0">, </span><span class="s1">Manager</span>
+
+<span class="s1">path1 = </span><span class="s2">&quot;/Users/Yi/Mirror/我的python教程/AskAndAnswer/multi_test_1/&quot;</span>
+<span class="s1">path2 = </span><span class="s2">&quot;/Users/Yi/Mirror/我的python教程/AskAndAnswer/multi_test_2/&quot;</span>
+
+
+<span class="s3"># 单进程</span>
+<span class="s0">def </span><span class="s1">concat_files(folder_path):</span>
+    <span class="s1">afn_list = glob(folder_path + </span><span class="s2">'*.xlsx'</span><span class="s1">)</span>
+    <span class="s3"># print(afn_list)</span>
+    <span class="s1">df_list = []</span>
+
+    <span class="s0">for </span><span class="s1">afn </span><span class="s0">in </span><span class="s1">afn_list:</span>
+        <span class="s3"># t = time.time()</span>
+        <span class="s1">df_temp = pd.read_excel(afn)</span>
+        <span class="s3"># print('单进程读每个文件用时', time.time() - t)</span>
+        <span class="s1">df_list.append(df_temp)</span>
+
+    <span class="s1">df_all = pd.concat(df_list)</span>
+    <span class="s1">print(df_all.shape)</span>
+    <span class="s0">return </span><span class="s1">df_all</span>
+
+
+<span class="s0">def </span><span class="s1">read_file(afn</span><span class="s0">, </span><span class="s1">df_list):</span>
+    <span class="s3"># t = time.time()</span>
+    <span class="s1">df = pd.read_excel(afn)</span>
+    <span class="s3"># print('多进程读每个文件用时', time.time() - t)</span>
+    <span class="s1">df_list.append(df)</span>
+
+
+<span class="s3"># 多进程</span>
+<span class="s0">def </span><span class="s1">concat_files_multi(folder_path):</span>
+    <span class="s1">afn_list = glob(folder_path + </span><span class="s2">'*.xlsx'</span><span class="s1">)</span>
+    <span class="s1">pool = Pool()</span>
+    <span class="s1">df_list = Manager().list()</span>
+    <span class="s3"># print('t1', round(time.time(), 2))</span>
+    <span class="s0">for </span><span class="s1">afn </span><span class="s0">in </span><span class="s1">afn_list:</span>
+        <span class="s1">pool.apply_async(read_file</span><span class="s0">, </span><span class="s1">args=(afn</span><span class="s0">, </span><span class="s1">df_list))</span>
+    <span class="s3"># print('t2', round(time.time(), 2))</span>
+    <span class="s1">pool.close()</span>
+    <span class="s3"># print('t3', round(time.time(), 2))</span>
+    <span class="s1">pool.join()</span>
+    <span class="s3"># print('t4', round(time.time(), 2))</span>
+    <span class="s1">df_all = pd.concat(df_list)</span>
+    <span class="s3"># print(df_all.shape)</span>
+    <span class="s0">return </span><span class="s1">df_all</span>
+
+
+<span class="s0">if </span><span class="s1">__name__ == </span><span class="s2">'__main__'</span><span class="s1">:</span>
+    <span class="s3"># t1 = time.time()</span>
+    <span class="s3"># concat_files(path1)</span>
+    <span class="s3"># t2 = time.time()</span>
+    <span class="s3"># print(&quot;单进程用时&quot;, t2 - t1, '秒')</span>
+    <span class="s3"># print('*' * 50)</span>
+    <span class="s1">concat_files_multi(path2)</span>
+    <span class="s3"># t3 = time.time()</span>
+    <span class="s3"># print(&quot;多进程用时&quot;, t3 - t2, '秒')</span>
+</pre>
+</body>
+</html>
