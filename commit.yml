@@ -2,10 +2,184 @@
 branches: {
   }
 fileChange:
-  /LICENSE:
-    newFile: !uuid 'dbbe3558157f5861bff35dcb37b328b679b0ccfd'
+  /Sales:
+    newFile: !uuid 'b49fa333797539b3e561a5cfefa997c3ace3a007'
     oldFile: null
-gitCommitId: !uuid '5820720465acb7744c09ffee18ecce2c255fd155'
+  /Sales/.idea:
+    newFile: !uuid 'bcbd7c4dd96eaf56aa178cb292df5a715397b920'
+    oldFile: null
+  /Sales/.idea/.gitignore:
+    newFile: !uuid '73f69e0958611ac6e00bde95641f6699030ad235'
+    oldFile: null
+  /Sales/.idea/Sales.iml:
+    newFile: !uuid 'd0876a78d06ac03b5d78c8dcdb95570281c6f1d6'
+    oldFile: null
+  /Sales/.idea/inspectionProfiles:
+    newFile: !uuid 'c33a8f5938540f33b4199301a0442be077e6a101'
+    oldFile: null
+  /Sales/.idea/inspectionProfiles/Project_Default.xml:
+    newFile: !uuid '92f718cf5b01132c979b6d0910be99f4c7942a4e'
+    oldFile: null
+  /Sales/.idea/inspectionProfiles/profiles_settings.xml:
+    newFile: !uuid '105ce2da2d6447d11dfe32bfb846c3d5b199fc99'
+    oldFile: null
+  /Sales/.idea/misc.xml:
+    newFile: !uuid '85ac6b2dceef18a9c187ff5a97058ccc886d502f'
+    oldFile: null
+  /Sales/.idea/modules.xml:
+    newFile: !uuid 'b84629fef891b75701e55593149643dca9d49bda'
+    oldFile: null
+  /Sales/1.xlsx:
+    newFile: !uuid 'b898a0bb995064627cb424c4a95e44f191ec73cf'
+    oldFile: null
+  /Sales/Q001_exercise.pdf:
+    newFile: !uuid 'df3eddea36b9f171cb5244a032d8e648df7e5d80'
+    oldFile: null
+  /Sales/all.xlsx:
+    newFile: !uuid '3f1864d8cec94ea0300981c9906b0b956cd653a0'
+    oldFile: null
+  /Sales/daily_tasks.py:
+    newFile: !uuid 'ddc828b464ea75e478aa272bbf2cfb99523b2c7d'
+    oldFile: null
+  /Sales/data_out:
+    newFile: !uuid '499a3e3e092374d9c43b72a74da7512827f03e34'
+    oldFile: null
+  /Sales/data_out/all_sales.pkl:
+    newFile: !uuid 'c5f2f2a04b11faa2bbc7e6463a14e24e1ab86c11'
+    oldFile: null
+  /Sales/data_out/all_sales.xlsx:
+    newFile: !uuid 'cffe998824db269bb6d3dbee1d8fca60cb050a85'
+    oldFile: null
+  /Sales/data_out/goods_id_statistics.xlsx:
+    newFile: !uuid '0a3e95ed735859df661ca7a5fd0f1a63d0080891'
+    oldFile: null
+  /Sales/data_out/月份_销量.png:
+    newFile: !uuid 'e163b688ac4f96c43a463fe6865625ffac55536e'
+    oldFile: null
+  /Sales/data_source:
+    newFile: !uuid '9feb713a8f8615fc8e88a6b887996307874b0179'
+    oldFile: null
+  /Sales/data_source/cost_other.xlsx:
+    newFile: !uuid '7fa242319cfada6c418b2e76d75edd698e6f2983'
+    oldFile: null
+  /Sales/data_source/cost_platform.xlsx:
+    newFile: !uuid 'd7f52b54da0d28dc1ab672426187532f2fbb8038'
+    oldFile: null
+  /Sales/data_source/goods_base.xlsx:
+    newFile: !uuid 'b78b6bc8d4e745f7412a831fe72bcf4721be5c26'
+    oldFile: null
+  /Sales/data_source/goods_image:
+    newFile: !uuid '1db06f3eeca041b22eb79a649ede78be4a9aa55d'
+    oldFile: null
+  /Sales/data_source/goods_image/AGDH5500.jpg:
+    newFile: !uuid 'c655e3971c66ce18d8dee887982115eb3d6da928'
+    oldFile: null
+  /Sales/data_source/goods_image/AXTB3200.jpg:
+    newFile: !uuid '9db5a6207ebd59f4b7ba166cda817438d0ce76a8'
+    oldFile: null
+  /Sales/data_source/goods_image/FLHR1800.jpg:
+    newFile: !uuid '5bceb4b362e1c9e3453496feb072ea504654187c'
+    oldFile: null
+  /Sales/data_source/goods_image/HWLA4700.jpg:
+    newFile: !uuid '6bf8d2656fd70a6b94dcc52641fc939c62abae3f'
+    oldFile: null
+  /Sales/data_source/goods_image/LCHM9800.jpg:
+    newFile: !uuid '68cd706315b2c1bdfe40d1428b95283cc47e743d'
+    oldFile: null
+  /Sales/data_source/goods_image/PWDK9200.jpg:
+    newFile: !uuid '756133a25cc2f3253a62e3a0e7309d1211717a89'
+    oldFile: null
+  /Sales/data_source/goods_image/QTVW5600.jpg:
+    newFile: !uuid 'a02e35f64f616a922dd0d151ba0dc8fdddafd448'
+    oldFile: null
+  /Sales/data_source/goods_image/UQNA9200.jpg:
+    newFile: !uuid '0a602c562c239b13b80d802bc42fe16857fddb6c'
+    oldFile: null
+  /Sales/data_source/goods_image/VBOY1800.jpg:
+    newFile: !uuid '6e337a24f9a5f5eff0a9d8c9d3025ac41e0b0bd0'
+    oldFile: null
+  /Sales/data_source/goods_image/XDQV5600.jpg:
+    newFile: !uuid '3a3c17778126fdfbad59394fee10b3149aba321e'
+    oldFile: null
+  /Sales/data_source/goods_image/XHQA3700.jpg:
+    newFile: !uuid 'a85f67305b5ae509f3130915e9ccdfc065deb991'
+    oldFile: null
+  /Sales/data_source/goods_image/YZFM1200.jpg:
+    newFile: !uuid 'a2865211ac55c108f68188f59a4420b1dd50f0ef'
+    oldFile: null
+  /Sales/data_source/jd_sales:
+    newFile: !uuid 'c0385ce588254b4d45d1c24d85ab8366c1d625bc'
+    oldFile: null
+  /Sales/data_source/jd_sales/1.xlsx:
+    newFile: !uuid '89f13e1b4c87f1e2dd2d3c628d8fb92170973c5d'
+    oldFile: null
+  /Sales/data_source/jd_sales/2.xlsx:
+    newFile: !uuid '8e8d1a8062f5533b55ed294ce9c36341de04bb35'
+    oldFile: null
+  /Sales/data_source/jd_sales/3.xlsx:
+    newFile: !uuid '6707315d62eb107752c02756588534ee9fb4543c'
+    oldFile: null
+  /Sales/data_source/jd_sales/4.xlsx:
+    newFile: !uuid 'd808ef51b6654da6540fdb2a83d5a6823131fc11'
+    oldFile: null
+  /Sales/data_source/jd_sales/5.xlsx:
+    newFile: !uuid '4497745672301ab9099e7c851c3e36d8df59568b'
+    oldFile: null
+  /Sales/data_source/jd_sales/6.xlsx:
+    newFile: !uuid 'd0aa898a58d8750745f92c539954836bc308e3db'
+    oldFile: null
+  /Sales/data_source/make_data.py:
+    newFile: !uuid 'd36319bb1f5b9dcf9d15a9c29bb1e11d8c0d01dc'
+    oldFile: null
+  /Sales/data_source/tb_sales:
+    newFile: !uuid 'efb5dfb9a2ed99a627b83d5ec842f25978df8901'
+    oldFile: null
+  /Sales/data_source/tb_sales/1.xlsx:
+    newFile: !uuid '749c723e3a244e9412c3e9917e33c8c9ceb4961b'
+    oldFile: null
+  /Sales/data_source/tb_sales/2.xlsx:
+    newFile: !uuid '04c50c2d08bf8f62a8a744909f2873b88be0b8b2'
+    oldFile: null
+  /Sales/data_source/tb_sales/3.xlsx:
+    newFile: !uuid '7d1a676db5121ffbb2be4f51fad3f49d2b603208'
+    oldFile: null
+  /Sales/data_source/tb_sales/4.xlsx:
+    newFile: !uuid '43ff054d53038b879f67ba38c347566cd256fea6'
+    oldFile: null
+  /Sales/data_source/tb_sales/5.xlsx:
+    newFile: !uuid 'b7a3e4f93fa6be863c288537fe20df8704946dc3'
+    oldFile: null
+  /Sales/data_source/tb_sales/6.xlsx:
+    newFile: !uuid '0af64a355aadbe996aabe62253f1664fc1372f5a'
+    oldFile: null
+  /Sales/generic:
+    newFile: !uuid '32b790128961f5423f636355bcf5a70ef9700dc9'
+    oldFile: null
+  /Sales/generic/__init__.py:
+    newFile: !uuid 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391'
+    oldFile: null
+  /Sales/generic/tb.xlsx:
+    newFile: !uuid '4eddfc89f101557bf80e2f9dcee42bb93d02d871'
+    oldFile: null
+  /Sales/generic/ufunc.py:
+    newFile: !uuid 'c83858cf62632008d88f6e00dc697c48238a8471'
+    oldFile: null
+  /Sales/tasks:
+    newFile: !uuid '6e5c98ab3afb4e0bfdf33091499ab61e9e3133f1'
+    oldFile: null
+  /Sales/tasks/__init__.py:
+    newFile: !uuid 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391'
+    oldFile: null
+  /Sales/tasks/jd.xlsx:
+    newFile: !uuid '74c308ed62d2bd27d6690eab59db3a2c5a393996'
+    oldFile: null
+  /Sales/tasks/tb.xlsx:
+    newFile: !uuid '16360c30f292703f26d5899db464817e49c0ffd4'
+    oldFile: null
+  /Sales/tasks/unify_tables.py:
+    newFile: !uuid 'c89179b46f91432bdcfdb56b2c79ff324ff0df17'
+    oldFile: null
+gitCommitId: !uuid '45ffcf9be319edf4077271207d398c4155be054d'
 renames: {
   }
-revisionId: 2
+revisionId: 3
