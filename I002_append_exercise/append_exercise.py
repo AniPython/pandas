@@ -12,7 +12,7 @@ def v_concat_files(folder: str) -> pd.DataFrame:
         ffn = os.path.join(folder, fn)
         print(ffn)
         df_temp = pd.read_excel(ffn)
-        df_all = df_all.append(df_temp)
+        df_all = df_all.append(df_temp)  # 报错
     return df_all
 
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     #     df_A.to_excel(writer, index=False)
 
     df_B = v_concat_files(
-        '/Users/Yi/Mirror/我的python教程/Pandas办公自动化/z_data_source/PlatformB'
+        '../z_data_source/PlatformB'
     )
     df_B['平台'] = '平台B'
     with pd.ExcelWriter(

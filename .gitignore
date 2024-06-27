@@ -122,3 +122,7 @@ dmypy.json
 /.idea
 *.zip
 /exportToHTML
+
+~$*
+*.bak
+*.tmp
